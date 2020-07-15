@@ -29,6 +29,7 @@ List<Widget> entradas() {
               ],
             ),
             Divider(
+              thickness: 1,
               color: Colors.black54,
             ),
           ],
@@ -67,6 +68,7 @@ List<Widget> sopas() {
               ],
             ),
             Divider(
+              thickness: 1,
               color: Colors.black54,
             ),
           ],
@@ -105,6 +107,7 @@ List<Widget> snaks() {
               ],
             ),
             Divider(
+              thickness: 1,
               color: Colors.black54,
             ),
           ],
@@ -143,6 +146,7 @@ List<Widget> platoFuerte() {
               ],
             ),
             Divider(
+              thickness: 1,
               color: Colors.black54,
             ),
           ],
@@ -181,6 +185,7 @@ List<Widget> bebidas() {
               ],
             ),
             Divider(
+              thickness: 1,
               color: Colors.black54,
             ),
           ],
@@ -219,6 +224,7 @@ List<Widget> micheladas() {
               ],
             ),
             Divider(
+              thickness: 1,
               color: Colors.black54,
             ),
           ],
@@ -257,6 +263,7 @@ List<Widget> cervezas() {
               ],
             ),
             Divider(
+              thickness: 1,
               color: Colors.black54,
             ),
           ],
@@ -295,6 +302,7 @@ List<Widget> botaneras() {
               ],
             ),
             Divider(
+              thickness: 1,
               color: Colors.black54,
             ),
           ],
@@ -333,6 +341,7 @@ List<Widget> mega() {
               ],
             ),
             Divider(
+              thickness: 1,
               color: Colors.black54,
             ),
           ],
@@ -371,6 +380,7 @@ List<Widget> cocktelesSinAlcohol() {
               ],
             ),
             Divider(
+              thickness: 1,
               color: Colors.black54,
             ),
           ],
@@ -409,6 +419,7 @@ List<Widget> cockteles() {
               ],
             ),
             Divider(
+              thickness: 1,
               color: Colors.black54,
             ),
           ],
@@ -451,7 +462,7 @@ List<Widget> botellas() {
       ),
     ),
   );
-
+  String copeo;
   entradasList.forEach((element) {
     listItems.add(Container(
       padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
@@ -460,6 +471,11 @@ List<Widget> botellas() {
     ));
     aux = element["marcas"];
     aux.forEach((marca) {
+      if(marca["copeo"]!=null){
+        copeo=marca["copeo"].toString();
+      }else{
+        copeo="  ";
+      }
       listItems.add(
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
@@ -481,13 +497,17 @@ List<Widget> botellas() {
                       style: TextStyle(color: Colors.black87),
                     ),
                   ),
-                  Text(
-                    "${marca["copeo"]}",
-                    style: TextStyle(color: Colors.black87),
+                  Container(
+                    width: 40,
+                    child: Text(
+                      "$copeo",
+                      style: TextStyle(color: Colors.black87),
+                    ),
                   ),
                 ],
               ),
               Divider(
+                thickness: 1,
                 color: Colors.black54,
               ),
             ],
@@ -497,7 +517,7 @@ List<Widget> botellas() {
       if (marca["nombre"] == "Don julio 70") {
         listItems.add(
           Padding(
-            padding: const EdgeInsets.only(top: 10),
+            padding: const EdgeInsets.symmetric(vertical: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
