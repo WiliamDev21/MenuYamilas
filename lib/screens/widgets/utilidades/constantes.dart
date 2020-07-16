@@ -34,25 +34,25 @@ const SNAKS = [
 
 const PLATOFUERTE = [
   {
-    "nombre": "Carne asada\n(ensalada dulce o quesa panela y nopales)",
+    "nombre": "Carne asada\n(Con ensalada dulce, salada o nopal y \nqueso panela asados/arroz o espaguetti)",
     "precio": 140
   },
   {
     "nombre":
-        "Pechuga asada o empanizada\n(ensalada dulce o quesa panela y nopales)",
+        "Pechuga asada o empanizada\n(Con ensalada dulce, salada o nopal y \nqueso panela asados/arroz o espaguetti)",
     "precio": 140
   },
   {
     "nombre":
-        "Filete de pescado / ajillo / empanizado\n(ensalada dulce/salada o arroz)",
+        "Filete de pescado / ajillo / empanizado\n(Con ensalada dulce, salada o nopal y \nqueso panela asados/arroz o espaguetti)",
     "precio": 140
   },
   {
     "nombre":
-        "Camarones empanizados / ajillo / diabla\n(ensalada dulce/salada)",
+        "Camarones empanizados / ajillo / diabla\n(Con ensalada dulce, salada o nopal y \nqueso panela asados/arroz o espaguetti)",
     "precio": 200
   },
-  {"nombre": "Salmon\n(ensalada dulce/salada)", "precio": 220},
+  {"nombre": "Salmon ajillo/finas hierbas\n(Con ensalada dulce, salada o nopal y \nqueso panela asados/arroz o espaguetti)", "precio": 220},
   {"nombre": "Aguachile (rojo, verde o negro)", "precio": 200},
   {"nombre": "Enchiladas con pollo o carne", "precio": 120},
 ];
@@ -74,6 +74,9 @@ const MICHELADAS = [
   {"nombre": "Mango", "precio": 70},
   {"nombre": "Gomichela", "precio": 75},
   {"nombre": "Clamato", "precio": 80},
+  {"nombre": "Salchichela", "precio": 90},
+  {"nombre": "Cucumbeer", "precio": 90},
+  {"nombre": "Cherrybeer", "precio": 95},
 ];
 
 const CERVEZAS = [
@@ -81,12 +84,6 @@ const CERVEZAS = [
   {"nombre": "Negra Moodelo Especial", "precio": 40},
   {"nombre": "Ultra", "precio": 45},
   {"nombre": "Cubetazo (8)\nVictoria/Corona", "precio": 230},
-];
-
-const BOTANERAS = [
-  {"nombre": "Salchichela", "precio": 90},
-  {"nombre": "Cucumbeer", "precio": 90},
-  {"nombre": "Cherrybeer", "precio": 95},
 ];
 
 const MEGA = [
@@ -104,6 +101,7 @@ const COCKTELES = [
   {"nombre": "Baylis", "precio": 90},
   {"nombre": "Gin-Gin (ginebra)\nManzana-Pepino-Frutos Rojos", "precio": 120},
   {"nombre": "Mojitos cubanos (litro)", "precio": 110},
+  {"nombre": "Mojitos de frutos rojos (litro)", "precio": 130},
   {"nombre": "Alfonso XIII", "precio": 85},
   {"nombre": "Medias de seda", "precio": 85},
   {"nombre": "Piña colada", "precio": 85},
@@ -116,10 +114,12 @@ const BOTELLAS = [
   {
     "tipo": "TEQUILA",
     "marcas": [
+      {"nombre": "Maestro Bodel", "precio": 1300, "copeo": 120},
+      {"nombre": "Herradura", "precio": 1100, "copeo": 100},
       {"nombre": "100 años", "precio": 600, "copeo": 55},
       {"nombre": "1800", "precio": 980, "copeo": 90},
-      {"nombre": "Don julio reposado", "precio": 900, "copeo": 90},
-      {"nombre": "Don julio 70", "precio": 1400, "copeo": 120},
+      {"nombre": "Don Julio reposado", "precio": 1100, "copeo": 100},
+      {"nombre": "Don Julio 70", "precio": 1600, "copeo": 140},
       {"nombre": "Centenario", "precio": 750, "copeo": 70},
       {"nombre": "Tradicional", "precio": 800, "copeo": 75},
     ]
@@ -143,11 +143,6 @@ const BOTELLAS = [
     "tipo": "RON",
     "marcas": [
       {"nombre": "Bacardi blanco", "precio": 750, "copeo": 60},
-      {"nombre": "Appleton state", "precio": 680},
-      {
-        "nombre": "Capitan Morgan",
-        "precio": 600,
-      },
     ]
   },
   {
@@ -159,11 +154,8 @@ const BOTELLAS = [
   {
     "tipo": "WHISKY",
     "marcas": [
-      {"nombre": "J&B", "precio": 750, "copeo": 70},
-      {"nombre": "Black & White", "precio": 680, "copeo": 60},
       {"nombre": "Etiqueta roja", "precio": 850, "copeo": 70},
       {"nombre": "Buchanans", "precio": 1450},
-      {"nombre": "Jack Daniels", "precio": 980},
     ]
   },
 ];

@@ -139,9 +139,12 @@ List<Widget> platoFuerte() {
                   element["nombre"],
                   style: TextStyle(color: Colors.black87),
                 ),
-                Text(
-                  "${element["precio"]}",
-                  style: TextStyle(color: Colors.black87),
+                Container(
+                  width: 40,
+                  child: Text(
+                    "${element["precio"]}",
+                    style: TextStyle(color: Colors.black87),
+                  ),
                 ),
               ],
             ),
@@ -241,45 +244,6 @@ List<Widget> cervezas() {
   listItems.add(Container(
     padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
     child: Text("CERVEZAS 355ML",
-        style: TextStyle(fontWeight: FontWeight.w300, fontSize: 30)),
-  ));
-  entradasList.forEach((element) {
-    listItems.add(
-      Padding(
-        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-        child: Column(
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  element["nombre"],
-                  style: TextStyle(color: Colors.black87),
-                ),
-                Text(
-                  "${element["precio"]}",
-                  style: TextStyle(color: Colors.black87),
-                ),
-              ],
-            ),
-            Divider(
-              thickness: 1,
-              color: Colors.black54,
-            ),
-          ],
-        ),
-      ),
-    );
-  });
-  return listItems;
-}
-
-List<Widget> botaneras() {
-  List<dynamic> entradasList = BOTANERAS;
-  List<Widget> listItems = [];
-  listItems.add(Container(
-    padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
-    child: Text("BOTANERAS DE LITRO",
         style: TextStyle(fontWeight: FontWeight.w300, fontSize: 30)),
   ));
   entradasList.forEach((element) {
