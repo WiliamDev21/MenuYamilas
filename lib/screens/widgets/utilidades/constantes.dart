@@ -81,13 +81,15 @@ const MICHELADAS = [
 
 const CERVEZAS = [
   {"nombre": "Corona o Victoria", "precio": 30},
-  {"nombre": "Negra Moodelo Especial", "precio": 40},
+  {"nombre": "Moodelo Especial", "precio": 40},
+  {"nombre": "Negra Moodelo", "precio": 40},
   {"nombre": "Ultra", "precio": 45},
   {"nombre": "Cubetazo (8)\nVictoria/Corona", "precio": 230},
 ];
 
 const MEGA = [
-  {"nombre": "Corona/Victoria/Modelo Especial", "precio": 70},
+  {"nombre": "Corona/Victoria", "precio": 70},
+  {"nombre": "Modelo Especial", "precio": 75},
 ];
 
 const COCKELESNOALCOHOL = [
@@ -114,7 +116,7 @@ const BOTELLAS = [
   {
     "tipo": "TEQUILA",
     "marcas": [
-      {"nombre": "Maestro Bodel", "precio": 1300, "copeo": 120},
+      {"nombre": "Maestro Dobel", "precio": 1300, "copeo": 120},
       {"nombre": "Herradura", "precio": 1100, "copeo": 100},
       {"nombre": "100 años", "precio": 600, "copeo": 55},
       {"nombre": "1800", "precio": 980, "copeo": 90},

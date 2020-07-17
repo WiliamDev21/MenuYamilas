@@ -20,17 +20,16 @@ List<Widget> entradas() {
               children: [
                 Text(
                   element["nombre"],
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
                 ),
                 Text(
                   "${element["precio"]}",
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
                 ),
               ],
             ),
             Divider(
               thickness: 1,
-              color: Colors.black54,
             ),
           ],
         ),
@@ -59,17 +58,16 @@ List<Widget> sopas() {
               children: [
                 Text(
                   element["nombre"],
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
                 ),
                 Text(
                   "${element["precio"]}",
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
                 ),
               ],
             ),
             Divider(
               thickness: 1,
-              color: Colors.black54,
             ),
           ],
         ),
@@ -98,17 +96,16 @@ List<Widget> snaks() {
               children: [
                 Text(
                   element["nombre"],
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
                 ),
                 Text(
                   "${element["precio"]}",
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
                 ),
               ],
             ),
             Divider(
               thickness: 1,
-              color: Colors.black54,
             ),
           ],
         ),
@@ -137,20 +134,19 @@ List<Widget> platoFuerte() {
               children: [
                 Text(
                   element["nombre"],
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
                 ),
                 Container(
                   width: 40,
                   child: Text(
                     "${element["precio"]}",
-                    style: TextStyle(color: Colors.black87),
+                    style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
                   ),
                 ),
               ],
             ),
             Divider(
               thickness: 1,
-              color: Colors.black54,
             ),
           ],
         ),
@@ -179,17 +175,16 @@ List<Widget> bebidas() {
               children: [
                 Text(
                   element["nombre"],
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
                 ),
                 Text(
                   "${element["precio"]}",
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
                 ),
               ],
             ),
             Divider(
               thickness: 1,
-              color: Colors.black54,
             ),
           ],
         ),
@@ -218,17 +213,16 @@ List<Widget> micheladas() {
               children: [
                 Text(
                   element["nombre"],
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
                 ),
                 Text(
                   "${element["precio"]}",
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
                 ),
               ],
             ),
             Divider(
               thickness: 1,
-              color: Colors.black54,
             ),
           ],
         ),
@@ -257,17 +251,16 @@ List<Widget> cervezas() {
               children: [
                 Text(
                   element["nombre"],
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
                 ),
                 Text(
                   "${element["precio"]}",
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
                 ),
               ],
             ),
             Divider(
               thickness: 1,
-              color: Colors.black54,
             ),
           ],
         ),
@@ -296,17 +289,16 @@ List<Widget> mega() {
               children: [
                 Text(
                   element["nombre"],
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
                 ),
                 Text(
                   "${element["precio"]}",
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
                 ),
               ],
             ),
             Divider(
               thickness: 1,
-              color: Colors.black54,
             ),
           ],
         ),
@@ -335,17 +327,16 @@ List<Widget> cocktelesSinAlcohol() {
               children: [
                 Text(
                   element["nombre"],
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
                 ),
                 Text(
                   "${element["precio"]}",
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
                 ),
               ],
             ),
             Divider(
               thickness: 1,
-              color: Colors.black54,
             ),
           ],
         ),
@@ -374,17 +365,16 @@ List<Widget> cockteles() {
               children: [
                 Text(
                   element["nombre"],
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
                 ),
                 Text(
                   "${element["precio"]}",
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
                 ),
               ],
             ),
             Divider(
               thickness: 1,
-              color: Colors.black54,
             ),
           ],
         ),
@@ -416,11 +406,11 @@ List<Widget> botellas() {
           ),
           Text(
             "750ml",
-            style: TextStyle(color: Colors.black87,fontSize: 20,fontWeight: FontWeight.w300),
+            style: TextStyle(fontSize: 20,fontWeight: FontWeight.w300),
           ),
           Text(
             "COPEO",
-            style: TextStyle(color: Colors.black87,fontSize: 20,fontWeight: FontWeight.w300),
+            style: TextStyle(fontSize: 20,fontWeight: FontWeight.w300),
           ),
         ],
       ),
@@ -452,27 +442,26 @@ List<Widget> botellas() {
                     width: 100,
                     child: Text(
                       "${marca["nombre"]}",
-                      style: TextStyle(color: Colors.black87),
+                      style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
                     ),
                   ),
                   Center(
                     child: Text(
                       "${marca["precio"]}",
-                      style: TextStyle(color: Colors.black87),
+                      style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
                     ),
                   ),
                   Container(
                     width: 40,
                     child: Text(
                       "$copeo",
-                      style: TextStyle(color: Colors.black87),
+                      style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
                     ),
                   ),
                 ],
               ),
               Divider(
                 thickness: 1,
-                color: Colors.black54,
               ),
             ],
           ),
@@ -490,11 +479,11 @@ List<Widget> botellas() {
                 ),
                 Text(
                   "1000ml",
-                  style: TextStyle(color: Colors.black87,fontSize: 20,fontWeight: FontWeight.w300),
+                  style: TextStyle(fontSize: 20,fontWeight: FontWeight.w300),
                 ),
                 Text(
                   "",
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
                 ),
               ],
             ),

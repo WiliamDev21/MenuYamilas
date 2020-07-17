@@ -21,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
             elevation: 10,
             child: ListView(
               children: [
-                DrawerHeader(child: Image.network("https://i.ibb.co/vh7Wyx7/yamilas-logo.jpg")),
+                DrawerHeader(child: Image.network("https://i.ibb.co/ry4j3mK/Yamilas-Logo.png")),
                 ListTile(
                   title: Padding(
                     padding: const EdgeInsets.only(top:15.0),
@@ -219,7 +219,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
                         Text("Siguenos en Facebook",
                             style: TextStyle(
-                                color: Colors.black87,
                                 fontSize: 20,
                                 fontWeight: FontWeight.w300)),
                         Container(
