@@ -34,25 +34,34 @@ const SNAKS = [
 
 const PLATOFUERTE = [
   {
-    "nombre": "Carne asada\n(Con ensalada dulce, salada o nopal y \nqueso panela asados/arroz o espaguetti)",
+    "nombre": "Arrachera\n(Con ensalada dulce, salada o nopal y queso panela asados/arroz o espaguetti)",
+    "precio": 180
+  },
+  {
+    "nombre": "Carne asada\n(Con ensalada dulce, salada o nopal y queso panela asados/arroz o espaguetti)",
     "precio": 140
   },
   {
     "nombre":
-        "Pechuga asada o empanizada\n(Con ensalada dulce, salada o nopal y \nqueso panela asados/arroz o espaguetti)",
+        "Pechuga asada o empanizada\n(Con ensalada dulce, salada o nopal y queso panela asados/arroz o espaguetti)",
     "precio": 140
   },
   {
     "nombre":
-        "Filete de pescado / ajillo / empanizado\n(Con ensalada dulce, salada o nopal y \nqueso panela asados/arroz o espaguetti)",
-    "precio": 140
+        "Filete de pescado / ajillo / empanizado\n(Con ensalada dulce, salada o nopal y queso panela asados/arroz o espaguetti)",
+    "precio": 190
   },
   {
     "nombre":
-        "Camarones empanizados / ajillo / diabla\n(Con ensalada dulce, salada o nopal y \nqueso panela asados/arroz o espaguetti)",
+        "Mojarra frita / ajillo / diabla\n(Con ensalada dulce, salada o nopal y queso panela asados/arroz o espaguetti)",
+    "precio": "Depende\nel peso"
+  },
+  {
+    "nombre":
+        "Camarones empanizados / ajillo / diabla\n(Con ensalada dulce, salada o nopal y queso panela asados/arroz o espaguetti)",
     "precio": 200
   },
-  {"nombre": "Salmon ajillo/finas hierbas\n(Con ensalada dulce, salada o nopal y \nqueso panela asados/arroz o espaguetti)", "precio": 220},
+  {"nombre": "Salmon ajillo/finas hierbas\n(Con ensalada dulce, salada o nopal y queso panela asados/arroz o espaguetti)", "precio": 220},
   {"nombre": "Aguachile (rojo, verde o negro)", "precio": 200},
   {"nombre": "Enchiladas con pollo o carne", "precio": 120},
 ];

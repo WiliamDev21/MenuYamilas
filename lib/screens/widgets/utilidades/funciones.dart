@@ -115,7 +115,8 @@ List<Widget> snaks() {
   return listItems;
 }
 
-List<Widget> platoFuerte() {
+List<Widget> platoFuerte(BuildContext context) {
+  double c_width = MediaQuery.of(context).size.width*0.6;
   List<dynamic> entradasList = PLATOFUERTE;
   List<Widget> listItems = [];
   listItems.add(Container(
@@ -132,12 +133,14 @@ List<Widget> platoFuerte() {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
-                  element["nombre"],
-                  style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
+                Container(
+                  width: c_width,
+                  child: Text(
+                    element["nombre"],
+                    style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),
+                  ),
                 ),
                 Container(
-                  width: 40,
                   child: Text(
                     "${element["precio"]}",
                     style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),

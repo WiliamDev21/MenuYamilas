@@ -10,6 +10,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   ScrollController scrollController = new ScrollController();
+  
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -21,13 +22,22 @@ class _HomeScreenState extends State<HomeScreen> {
             elevation: 10,
             child: ListView(
               children: [
-                DrawerHeader(child: Image.network("https://i.ibb.co/ry4j3mK/Yamilas-Logo.png")),
+                DrawerHeader(
+                    child: Image.network(
+                        "https://i.ibb.co/ry4j3mK/Yamilas-Logo.png")),
                 ListTile(
                   title: Padding(
-                    padding: const EdgeInsets.only(top:15.0),
-                    child: Text("ENTRADAS",
-                        style:
-                            TextStyle(fontWeight: FontWeight.w300, fontSize: 30)),
+                    padding: const EdgeInsets.only(top: 15.0),
+                    child: Row(
+                      children: [
+                        Text(
+                          "ENTRADAS",
+                          style: TextStyle(
+                              fontWeight: FontWeight.w300, fontSize: 30),
+                        ),
+                        Image.network(""),
+                      ],
+                    ),
                   ),
                   onTap: () {
                     setState(() {
@@ -43,9 +53,16 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: Colors.black54,
                 ),
                 ListTile(
-                  title: Text("SOPAS",
-                      style:
-                          TextStyle(fontWeight: FontWeight.w300, fontSize: 30)),
+                  title: Row(
+                    children: [
+                      Text(
+                        "SOPAS",
+                        style: TextStyle(
+                            fontWeight: FontWeight.w300, fontSize: 30),
+                      ),
+                      Image.network(""),
+                    ],
+                  ),
                   onTap: () {
                     setState(() {
                       Navigator.of(context).pop();
@@ -60,9 +77,15 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: Colors.black54,
                 ),
                 ListTile(
-                  title: Text("SNAK'S",
-                      style:
-                          TextStyle(fontWeight: FontWeight.w300, fontSize: 30)),
+                  title: Row(
+                    children: [
+                      Text(
+                        "SNAK'S",
+                        style: TextStyle(
+                            fontWeight: FontWeight.w300, fontSize: 30),
+                      ),
+                    ],
+                  ),
                   onTap: () {
                     setState(() {
                       Navigator.of(context).pop();
@@ -77,9 +100,15 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: Colors.black54,
                 ),
                 ListTile(
-                  title: Text("PLATO FUERTE",
-                      style:
-                          TextStyle(fontWeight: FontWeight.w300, fontSize: 30)),
+                  title: Row(
+                    children: [
+                      Text(
+                        "PLATO FUERTE",
+                        style: TextStyle(
+                            fontWeight: FontWeight.w300, fontSize: 30),
+                      ),
+                    ],
+                  ),
                   onTap: () {
                     setState(() {
                       Navigator.of(context).pop();
@@ -94,13 +123,19 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: Colors.black54,
                 ),
                 ListTile(
-                  title: Text("BEBIDAS",
-                      style:
-                          TextStyle(fontWeight: FontWeight.w300, fontSize: 30)),
+                  title: Row(
+                    children: [
+                      Text(
+                        "BEBIDAS",
+                        style: TextStyle(
+                            fontWeight: FontWeight.w300, fontSize: 30),
+                      ),
+                    ],
+                  ),
                   onTap: () {
                     setState(() {
                       Navigator.of(context).pop();
-                      scrollController.animateTo(2225,
+                      scrollController.animateTo(2550,
                           duration: Duration(milliseconds: 500),
                           curve: Curves.easeInOut);
                     });
@@ -111,13 +146,19 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: Colors.black54,
                 ),
                 ListTile(
-                  title: Text("MICHELADAS",
-                      style:
-                          TextStyle(fontWeight: FontWeight.w300, fontSize: 30)),
+                  title: Row(
+                    children: [
+                      Text(
+                        "MICHELADAS",
+                        style: TextStyle(
+                            fontWeight: FontWeight.w300, fontSize: 30),
+                      ),
+                    ],
+                  ),
                   onTap: () {
                     setState(() {
                       Navigator.of(context).pop();
-                      scrollController.animateTo(2600,
+                      scrollController.animateTo(2950,
                           duration: Duration(milliseconds: 500),
                           curve: Curves.easeInOut);
                     });
@@ -128,13 +169,19 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: Colors.black54,
                 ),
                 ListTile(
-                  title: Text("CERVEZAS 355ML",
-                      style:
-                          TextStyle(fontWeight: FontWeight.w300, fontSize: 30)),
+                  title: Row(
+                    children: [
+                      Text(
+                        "CERVEZAS 355ML",
+                        style: TextStyle(
+                            fontWeight: FontWeight.w300, fontSize: 30),
+                      ),
+                    ],
+                  ),
                   onTap: () {
                     setState(() {
                       Navigator.of(context).pop();
-                      scrollController.animateTo(3220,
+                      scrollController.animateTo(3570,
                           duration: Duration(milliseconds: 500),
                           curve: Curves.easeInOut);
                     });
@@ -145,13 +192,19 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: Colors.black54,
                 ),
                 ListTile(
-                  title: Text("MEGA",
-                      style:
-                          TextStyle(fontWeight: FontWeight.w300, fontSize: 30)),
+                  title: Row(
+                    children: [
+                      Text(
+                        "MEGA",
+                        style: TextStyle(
+                            fontWeight: FontWeight.w300, fontSize: 30),
+                      ),
+                    ],
+                  ),
                   onTap: () {
                     setState(() {
                       Navigator.of(context).pop();
-                      scrollController.animateTo(3530,
+                      scrollController.animateTo(3930,
                           duration: Duration(milliseconds: 500),
                           curve: Curves.easeInOut);
                     });
@@ -162,13 +215,15 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: Colors.black54,
                 ),
                 ListTile(
-                  title: Text("COCKTELERIA SIN ALCOHOL",
-                      style:
-                          TextStyle(fontWeight: FontWeight.w300, fontSize: 30)),
+                  title: Text(
+                        "COCKTELERIA SIN ALCOHOL",
+                        style: TextStyle(
+                            fontWeight: FontWeight.w300, fontSize: 30),
+                      ),
                   onTap: () {
                     setState(() {
                       Navigator.of(context).pop();
-                      scrollController.animateTo(3670,
+                      scrollController.animateTo(4110,
                           duration: Duration(milliseconds: 500),
                           curve: Curves.easeInOut);
                     });
@@ -179,13 +234,19 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: Colors.black54,
                 ),
                 ListTile(
-                  title: Text("COCKTELERIA",
-                      style:
-                          TextStyle(fontWeight: FontWeight.w300, fontSize: 30)),
+                  title: Row(
+                    children: [
+                      Text(
+                        "COCKTELERIA",
+                        style: TextStyle(
+                            fontWeight: FontWeight.w300, fontSize: 30),
+                      ),
+                    ],
+                  ),
                   onTap: () {
                     setState(() {
                       Navigator.of(context).pop();
-                      scrollController.animateTo(3975,
+                      scrollController.animateTo(4440,
                           duration: Duration(milliseconds: 500),
                           curve: Curves.easeInOut);
                     });
@@ -196,13 +257,19 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: Colors.black54,
                 ),
                 ListTile(
-                  title: Text("BOTELLAS",
-                      style:
-                          TextStyle(fontWeight: FontWeight.w300, fontSize: 30)),
+                  title: Row(
+                    children: [
+                      Text(
+                        "BOTELLAS",
+                        style: TextStyle(
+                            fontWeight: FontWeight.w300, fontSize: 30),
+                      ),
+                    ],
+                  ),
                   onTap: () {
                     setState(() {
                       Navigator.of(context).pop();
-                      scrollController.animateTo(4600,
+                      scrollController.animateTo(5090,
                           duration: Duration(milliseconds: 500),
                           curve: Curves.easeInOut);
                     });
@@ -213,18 +280,19 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: Colors.black54,
                 ),
                 ListTile(
-                  onTap: ()=>launch("https://www.facebook.com/Yamilas-Garden-284091888924957/"),
+                  onTap: () => launch(
+                      "https://www.facebook.com/Yamilas-Garden-284091888924957/"),
                   title: Center(
                     child: Column(
                       children: [
                         Text("Siguenos en Facebook",
                             style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.w300)),
+                                fontSize: 20, fontWeight: FontWeight.w300)),
                         Container(
                           width: 50,
                           padding: EdgeInsets.symmetric(vertical: 10),
-                          child: Image.network("https://image.flaticon.com/icons/png/512/61/61045.png"),
+                          child: Image.network(
+                              "https://image.flaticon.com/icons/png/512/61/61045.png"),
                         ),
                       ],
                     ),
@@ -237,18 +305,61 @@ class _HomeScreenState extends State<HomeScreen> {
           body: CustomScrollView(
             controller: scrollController,
             slivers: [
-              SliverList(delegate: SliverChildListDelegate(entradas())),
-              SliverList(delegate: SliverChildListDelegate(sopas())),
-              SliverList(delegate: SliverChildListDelegate(snaks())),
-              SliverList(delegate: SliverChildListDelegate(platoFuerte())),
-              SliverList(delegate: SliverChildListDelegate(bebidas())),
-              SliverList(delegate: SliverChildListDelegate(micheladas())),
-              SliverList(delegate: SliverChildListDelegate(cervezas())),
-              SliverList(delegate: SliverChildListDelegate(mega())),
               SliverList(
-                  delegate: SliverChildListDelegate(cocktelesSinAlcohol())),
-              SliverList(delegate: SliverChildListDelegate(cockteles())),
-              SliverList(delegate: SliverChildListDelegate(botellas())),
+                delegate: SliverChildListDelegate(
+                  entradas(),
+                ),
+              ),
+              SliverList(
+                delegate: SliverChildListDelegate(
+                  sopas(),
+                ),
+              ),
+              SliverList(
+                delegate: SliverChildListDelegate(
+                  snaks(),
+                ),
+              ),
+              SliverList(
+                delegate: SliverChildListDelegate(
+                  platoFuerte(context),
+                ),
+              ),
+              SliverList(
+                delegate: SliverChildListDelegate(
+                  bebidas(),
+                ),
+              ),
+              SliverList(
+                delegate: SliverChildListDelegate(
+                  micheladas(),
+                ),
+              ),
+              SliverList(
+                delegate: SliverChildListDelegate(
+                  cervezas(),
+                ),
+              ),
+              SliverList(
+                delegate: SliverChildListDelegate(
+                  mega(),
+                ),
+              ),
+              SliverList(
+                delegate: SliverChildListDelegate(
+                  cocktelesSinAlcohol(),
+                ),
+              ),
+              SliverList(
+                delegate: SliverChildListDelegate(
+                  cockteles(),
+                ),
+              ),
+              SliverList(
+                delegate: SliverChildListDelegate(
+                  botellas(),
+                ),
+              ),
             ],
           )),
     );
