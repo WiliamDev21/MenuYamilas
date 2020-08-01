@@ -5,7 +5,7 @@ const ENTRADAS = [
   {"nombre": "Taco de bistec c/queso", "precio": 30},
   {"nombre": "Taco de bistec sencillo", "precio": 25},
   {"nombre": "Taco Gobernador", "precio": 85},
-  {"nombre": "Quesadillas (3 piezas) de harina o maiz", "precio": 35},
+  {"nombre": "Quesadillas (3 piezas) de harina o maíz", "precio": 35},
   {"nombre": "Alitas (10 piezas)", "precio": 110},
   {"nombre": "Ensalada dulce", "precio": 85},
   {"nombre": "Ensalada salada", "precio": 85},
@@ -19,7 +19,7 @@ const SOPAS = [
 ];
 
 const SNAKS = [
-  {"nombre": "Club sandwich con papas", "precio": 65},
+  {"nombre": "Club sándwich con papas", "precio": 65},
   {"nombre": "Sincronizada sencilla", "precio": 30},
   {"nombre": "Sincronizada especial", "precio": 30},
   {"nombre": "Hot-Dog", "precio": 15},
@@ -28,7 +28,7 @@ const SNAKS = [
   {"nombre": "Hamburguesa hawaiana", "precio": 55},
   {"nombre": "Nachos", "precio": 45},
   {"nombre": "Papas a la francesa", "precio": 55},
-  {"nombre": "Chicharron preparado", "precio": 30},
+  {"nombre": "Chicharrón preparado", "precio": 30},
   {"nombre": "Dorilocos", "precio": 30},
 ];
 
@@ -61,7 +61,7 @@ const PLATOFUERTE = [
         "Camarones empanizados / ajillo / diabla\n(Con ensalada dulce, salada o nopal y queso panela asados/arroz o espaguetti)",
     "precio": 200
   },
-  {"nombre": "Salmon ajillo/finas hierbas\n(Con ensalada dulce, salada o nopal y queso panela asados/arroz o espaguetti)", "precio": 220},
+  {"nombre": "Salmón ajillo/finas hierbas\n(Con ensalada dulce, salada o nopal y queso panela asados/arroz o espaguetti)", "precio": 220},
   {"nombre": "Aguachile (rojo, verde o negro)", "precio": 200},
   {"nombre": "Enchiladas con pollo o carne", "precio": 120},
 ];
@@ -90,8 +90,8 @@ const MICHELADAS = [
 
 const CERVEZAS = [
   {"nombre": "Corona o Victoria", "precio": 30},
-  {"nombre": "Moodelo Especial", "precio": 40},
-  {"nombre": "Negra Moodelo", "precio": 40},
+  {"nombre": "Modelo Especial", "precio": 40},
+  {"nombre": "Negra Modelo", "precio": 40},
   {"nombre": "Ultra", "precio": 45},
   {"nombre": "Cubetazo (8)\nVictoria/Corona", "precio": 230},
 ];
@@ -109,7 +109,7 @@ const COCKELESNOALCOHOL = [
 ];
 
 const COCKTELES = [
-  {"nombre": "Baylis", "precio": 90},
+  {"nombre": "Baileys", "precio": 90},
   {"nombre": "Gin-Gin (ginebra)\nManzana-Pepino-Frutos Rojos", "precio": 120},
   {"nombre": "Mojitos cubanos (litro)", "precio": 110},
   {"nombre": "Mojitos de frutos rojos (litro)", "precio": 130},
@@ -166,7 +166,7 @@ const BOTELLAS = [
     "tipo": "WHISKY",
     "marcas": [
       {"nombre": "Etiqueta roja", "precio": 850, "copeo": 70},
-      {"nombre": "Buchanans", "precio": 1450},
+      {"nombre": "Buchanan's", "precio": 1450},
     ]
   },
 ];

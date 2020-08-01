@@ -82,7 +82,7 @@ List<Widget> snaks() {
   List<Widget> listItems = [];
   listItems.add(Container(
     padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
-    child: Text("SNAK'S",
+    child: Text("BOCADILLOS Y BOTANAS",
         style: TextStyle(fontWeight: FontWeight.w300, fontSize: 30)),
   ));
   entradasList.forEach((element) {
@@ -316,7 +316,7 @@ List<Widget> cocktelesSinAlcohol() {
   List<Widget> listItems = [];
   listItems.add(Container(
     padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
-    child: Text("COCKTELERIA SIN ALCOHOL",
+    child: Text("COCTELERÍA SIN ALCOHOL",
         style: TextStyle(fontWeight: FontWeight.w300, fontSize: 30)),
   ));
   entradasList.forEach((element) {
@@ -354,7 +354,7 @@ List<Widget> cockteles() {
   List<Widget> listItems = [];
   listItems.add(Container(
     padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
-    child: Text("COCKTELERIA",
+    child: Text("COCTELERÍA",
         style: TextStyle(fontWeight: FontWeight.w300, fontSize: 30)),
   ));
   entradasList.forEach((element) {

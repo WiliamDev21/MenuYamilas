@@ -77,14 +77,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: Colors.black54,
                 ),
                 ListTile(
-                  title: Row(
-                    children: [
-                      Text(
-                        "SNAK'S",
-                        style: TextStyle(
-                            fontWeight: FontWeight.w300, fontSize: 30),
-                      ),
-                    ],
+                  title: Text(
+                    "BOCADILLOS Y BOTANAS",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w300, fontSize: 30),
                   ),
                   onTap: () {
                     setState(() {
@@ -216,7 +212,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 ListTile(
                   title: Text(
-                        "COCKTELERIA SIN ALCOHOL",
+                        "COCTELERÍA SIN ALCOHOL",
                         style: TextStyle(
                             fontWeight: FontWeight.w300, fontSize: 30),
                       ),
@@ -237,7 +233,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   title: Row(
                     children: [
                       Text(
-                        "COCKTELERIA",
+                        "COCTELERÍA",
                         style: TextStyle(
                             fontWeight: FontWeight.w300, fontSize: 30),
                       ),
