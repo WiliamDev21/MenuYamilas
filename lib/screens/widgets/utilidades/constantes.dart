@@ -21,7 +21,7 @@ const SOPAS = [
 const SNAKS = [
   {"nombre": "Club sándwich con papas", "precio": 65},
   {"nombre": "Sincronizada sencilla", "precio": 30},
-  {"nombre": "Sincronizada especial", "precio": 30},
+  {"nombre": "Sincronizada especial", "precio": 40},
   {"nombre": "Hot-Dog", "precio": 15},
   {"nombre": "Hot-Dog (2 piezas)", "precio": 25},
   {"nombre": "Hamburguesa sencilla", "precio": 40},
