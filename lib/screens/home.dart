@@ -10,7 +10,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   ScrollController scrollController = new ScrollController();
-  
+  List<double> alturas=[0,680,980,1800,2880,3270,3850,4210,4400,4870,5400];
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -42,8 +42,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   onTap: () {
                     setState(() {
                       Navigator.of(context).pop();
-                      scrollController.animateTo(0,
-                          duration: Duration(milliseconds: 500),
+                      scrollController.animateTo(alturas[0],
+                         duration: Duration(milliseconds: 500),
                           curve: Curves.easeInOut);
                     });
                   },
@@ -66,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   onTap: () {
                     setState(() {
                       Navigator.of(context).pop();
-                      scrollController.animateTo(620,
+                      scrollController.animateTo(alturas[1],
                           duration: Duration(milliseconds: 500),
                           curve: Curves.easeInOut);
                     });
@@ -85,7 +85,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   onTap: () {
                     setState(() {
                       Navigator.of(context).pop();
-                      scrollController.animateTo(910,
+                      scrollController.animateTo(alturas[2],
                           duration: Duration(milliseconds: 500),
                           curve: Curves.easeInOut);
                     });
@@ -108,7 +108,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   onTap: () {
                     setState(() {
                       Navigator.of(context).pop();
-                      scrollController.animateTo(1580,
+                      scrollController.animateTo(alturas[3],
                           duration: Duration(milliseconds: 500),
                           curve: Curves.easeInOut);
                     });
@@ -131,7 +131,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   onTap: () {
                     setState(() {
                       Navigator.of(context).pop();
-                      scrollController.animateTo(2550,
+                      scrollController.animateTo(alturas[4],
                           duration: Duration(milliseconds: 500),
                           curve: Curves.easeInOut);
                     });
@@ -154,7 +154,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   onTap: () {
                     setState(() {
                       Navigator.of(context).pop();
-                      scrollController.animateTo(2950,
+                      scrollController.animateTo(alturas[5],
                           duration: Duration(milliseconds: 500),
                           curve: Curves.easeInOut);
                     });
@@ -177,7 +177,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   onTap: () {
                     setState(() {
                       Navigator.of(context).pop();
-                      scrollController.animateTo(3570,
+                      scrollController.animateTo(alturas[6],
                           duration: Duration(milliseconds: 500),
                           curve: Curves.easeInOut);
                     });
@@ -200,7 +200,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   onTap: () {
                     setState(() {
                       Navigator.of(context).pop();
-                      scrollController.animateTo(3930,
+                      scrollController.animateTo(alturas[7],
                           duration: Duration(milliseconds: 500),
                           curve: Curves.easeInOut);
                     });
@@ -219,7 +219,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   onTap: () {
                     setState(() {
                       Navigator.of(context).pop();
-                      scrollController.animateTo(4110,
+                      scrollController.animateTo(alturas[8],
                           duration: Duration(milliseconds: 500),
                           curve: Curves.easeInOut);
                     });
@@ -242,7 +242,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   onTap: () {
                     setState(() {
                       Navigator.of(context).pop();
-                      scrollController.animateTo(4440,
+                      scrollController.animateTo(alturas[9],
                           duration: Duration(milliseconds: 500),
                           curve: Curves.easeInOut);
                     });
@@ -265,7 +265,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   onTap: () {
                     setState(() {
                       Navigator.of(context).pop();
-                      scrollController.animateTo(5090,
+                      scrollController.animateTo(alturas[10],
                           duration: Duration(milliseconds: 500),
                           curve: Curves.easeInOut);
                     });
