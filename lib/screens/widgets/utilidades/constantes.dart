@@ -45,7 +45,7 @@ const PLATOFUERTE = [
   {
     "nombre":
         "Arrachera\n(Con ensalada dulce, salada o nopal y queso panela asados/arroz o espaguetti)",
-    "precio": 280
+    "precio": 300
   },
   {
     "nombre":

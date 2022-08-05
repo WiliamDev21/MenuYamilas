@@ -10,13 +10,25 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   ScrollController scrollController = new ScrollController();
-  List<double> alturas=[0,680,980,1800,2880,3270,3850,4210,4400,4870,5400];
+  List<double> alturas = [
+    0,
+    680,
+    980,
+    1800,
+    2880,
+    3270,
+    3850,
+    4210,
+    4400,
+    4870,
+    5400
+  ];
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
           appBar: AppBar(
-            backgroundColor: Colors.black54,
+            backgroundColor: Colors.black,
             title: Text("YAMILA´S GARDEN"),
           ),
           drawer: Drawer(
@@ -43,7 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     setState(() {
                       Navigator.of(context).pop();
                       scrollController.animateTo(alturas[0],
-                         duration: Duration(milliseconds: 500),
+                          duration: Duration(milliseconds: 500),
                           curve: Curves.easeInOut);
                     });
                   },
@@ -78,8 +90,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ListTile(
                   title: Text(
                     "BOCADILLOS Y BOTANAS",
-                    style: TextStyle(
-                        fontWeight: FontWeight.w300, fontSize: 30),
+                    style: TextStyle(fontWeight: FontWeight.w300, fontSize: 30),
                   ),
                   onTap: () {
                     setState(() {
@@ -211,10 +222,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 ListTile(
                   title: Text(
-                        "COCTELERÍA SIN ALCOHOL",
-                        style: TextStyle(
-                            fontWeight: FontWeight.w300, fontSize: 30),
-                      ),
+                    "COCTELERÍA SIN ALCOHOL",
+                    style: TextStyle(fontWeight: FontWeight.w300, fontSize: 30),
+                  ),
                   onTap: () {
                     setState(() {
                       Navigator.of(context).pop();
@@ -286,8 +296,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         Container(
                           width: 50,
                           padding: EdgeInsets.symmetric(vertical: 10),
-                          child: Image.network(
-                              "https://image.flaticon.com/icons/png/512/61/61045.png"),
+                          child: Image.asset("facebook_logo.png"),
                         ),
                       ],
                     ),
