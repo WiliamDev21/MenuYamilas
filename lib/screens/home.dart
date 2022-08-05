@@ -16,6 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return SafeArea(
       child: Scaffold(
           appBar: AppBar(
+            backgroundColor: Colors.black54,
             title: Text("YAMILA´S GARDEN"),
           ),
           drawer: Drawer(
@@ -35,7 +36,6 @@ class _HomeScreenState extends State<HomeScreen> {
                           style: TextStyle(
                               fontWeight: FontWeight.w300, fontSize: 30),
                         ),
-                        Image.network(""),
                       ],
                     ),
                   ),
@@ -60,7 +60,6 @@ class _HomeScreenState extends State<HomeScreen> {
                         style: TextStyle(
                             fontWeight: FontWeight.w300, fontSize: 30),
                       ),
-                      Image.network(""),
                     ],
                   ),
                   onTap: () {
